@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: 'School Bus Tracking System',
     description: 'A real-time bus tracking system for schools, providing live location updates and route information to parents and school administrators.',
     longDescription: 'Built with monolithic architecture for simplicity and rapid development. The system includes features such as real-time bus location tracking, route management, and notifications for parents and school administrators. It is designed to enhance the safety and convenience of school transportation, providing peace of mind to parents and improving communication between schools and families.',
-    tags: ['Next.js', 'TailwindCSS', 'Node.js', 'Express', 'PostgreSQL', 'WebSocket'],
+    tags: ['Next.js', 'TailwindCSS', 'Node.js', 'Express', 'PostgreSQL', 'WebSocket', 'Mapbox API'],
     githubUrl: 'https://github.com/qbael/School-Bus-Management-System',
     status: 'completed',
     year: '2025',

@@ -1,4 +1,6 @@
 import { personalInfo } from '../data/portfolio';
+import avatar from '../assets/avatar.jpeg';
+import resume from '../assets/QuocBao_s_Resume.pdf'
 
 const GithubIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -45,9 +47,9 @@ export default function ProfileCard() {
               boxShadow: '0 0 30px rgba(0,255,136,0.2), 0 0 60px rgba(0,255,136,0.05)',
             }}
           >
-              {personalInfo.avatarUrl ? (
+              {avatar ? (
                   <img
-                      src={personalInfo.avatarUrl}
+                      src={avatar}
                       alt={personalInfo.name}
                       className="absolute inset-0 w-full h-full object-cover scale-200 object-center"
                   />
@@ -175,7 +177,7 @@ export default function ProfileCard() {
 
       {/* Resume CTA */}
       <a
-        href={personalInfo.resumeUrl}
+        href={resume}
         target="_blank"
         rel="noopener noreferrer"
         className="group flex items-center justify-center gap-2 py-3 rounded-lg font-mono text-sm font-medium transition-all duration-300 mt-auto"
