@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+  import { useEffect, useRef, useState } from 'react';
 import { personalInfo } from '../data/portfolio';
 
 const TYPING_STRINGS = [

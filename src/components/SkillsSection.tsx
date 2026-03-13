@@ -94,32 +94,6 @@ export default function SkillsSection() {
           ))}
         </div>
 
-        {/* Stats row */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-16">
-          {[
-            { value: '10+', label: 'Technologies', color: '#a855f7' },
-            { value: '4+', label: 'Open Source Repos', color: '#ff006e' },
-          ].map((stat, i) => (
-            <div
-              key={i}
-              className={`p-5 rounded-xl text-center transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-              style={{
-                transitionDelay: `${i * 0.1 + 0.5}s`,
-                background: `${stat.color}08`,
-                border: `1px solid ${stat.color}20`,
-              }}
-            >
-              <div
-                className="font-display text-3xl font-extrabold mb-1"
-                style={{ color: stat.color, textShadow: `0 0 20px ${stat.color}60` }}
-              >
-                {stat.value}
-              </div>
-              <div className="font-mono text-xs text-slate-500">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-
         {/* Terminal block */}
         <div
           className="mt-12 p-6 rounded-xl font-mono text-xs overflow-hidden relative"

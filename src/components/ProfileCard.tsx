@@ -1,4 +1,4 @@
-import { personalInfo } from '../data/portfolio';
+ import { personalInfo } from '../data/portfolio';
 import avatar from '../assets/avatar.jpeg';
 import resume from '../assets/QuocBao_s_Resume.pdf'
 
@@ -198,7 +198,7 @@ export default function ProfileCard() {
         }}
       >
         <DownloadIcon />
-        Download Resume
+        Resume
       </a>
     </div>
   );
