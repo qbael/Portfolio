@@ -1,5 +1,5 @@
  import { personalInfo } from '../data/portfolio';
-import avatar from '../assets/avatar.jpeg';
+import avatar from '../assets/avatar.jpg';
 import resume from '../assets/QuocBao_s_Resume.pdf'
 
 const GithubIcon = () => (
@@ -51,7 +51,7 @@ export default function ProfileCard() {
                   <img
                       src={avatar}
                       alt={personalInfo.name}
-                      className="absolute inset-0 w-full h-full object-cover scale-200 object-center"
+                      className="absolute inset-0 w-full h-full object-cover scale-150 object-top"
                   />
               ) : (
                   <div
