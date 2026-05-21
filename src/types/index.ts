@@ -2,7 +2,7 @@ export interface Project {
   id: number;
   title: string;
   description: string;
-  longDescription: string;
+  longDescription: string[];
   tags: string[];
   githubUrl: string;
   liveUrl?: string;
@@ -20,7 +20,7 @@ export interface Skill {
 
 export interface SkillCategory {
   label: string;
-  key: 'frontend' | 'backend' | 'devops' | 'tools';
+  key: 'languages' | 'frontend' | 'backend' | 'devops' | 'tools';
   color: string;
   skills: string[];
 }

@@ -71,7 +71,17 @@ function ProjectCard({ project }: { project: Project }) {
 
         {/* Description */}
         <p className="font-body text-sm text-slate-400 leading-relaxed mb-4">{project.description}</p>
-        <p className="font-body text-xs text-slate-500 leading-relaxed mb-5">{project.longDescription}</p>
+        <ul className="space-y-1.5 mb-5">
+          {project.longDescription.map((item, idx) => (
+            <li key={idx} className="flex items-start gap-2">
+              <span
+                className="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full"
+                style={{ background: '#00ff88', boxShadow: '0 0 4px rgba(0,255,136,0.5)' }}
+              />
+              <span className="font-body text-xs text-slate-500 leading-relaxed">{item}</span>
+            </li>
+          ))}
+        </ul>
 
         {/* Highlight */}
         {project.highlight && (

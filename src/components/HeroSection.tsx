@@ -205,7 +205,7 @@ export default function HeroSection() {
               boxShadow: '0 0 20px rgba(0,255,136,0.3)',
             }}
           >
-            <span className="relative z-10">View Projects</span>
+            <span className="relative z-10 text-black">View Projects</span>
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
           </a>
           <a
